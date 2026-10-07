@@ -1,15 +1,8 @@
-class MyProduct:
-    id = int
-    name = str
-    description = str
-    quantity = int
-    price = float
+from pydantic import BaseModel
 
-    def __init__(self, id:int, name:str, description:str, quantity:int, price:float):
-        self.id = id
-        self.name = name
-        self.description = description
-        self.quantity =  quantity
-        self.price = price
-
-
+class MyProduct(BaseModel):
+    id: int
+    name: str
+    description: str
+    quantity : int
+    price : float
