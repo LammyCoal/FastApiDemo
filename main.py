@@ -8,9 +8,9 @@ def greet():
     return "Welcome to Lammy's App!"
 
 Products = [
-    MyProduct(1,"laptop", "Personal laptop", 11, 57.80),
-    MyProduct(2,"Phone","Iphone 11", 1, 1234.5),
-    MyProduct(3,"Headphones","Noise cancelling headphones", 5, 99.99),
+    MyProduct(id=1, name="laptop", description="Personal laptop", quantity=11, price=57.80),
+    MyProduct(id=2, name="Phone", description="Iphone 11", quantity=1, price=1234.5),
+    MyProduct(id=3, name="Headphones", description="Noise cancelling headphones", quantity=5, price=99.99)
 ]
 
 @app.get("/products")
